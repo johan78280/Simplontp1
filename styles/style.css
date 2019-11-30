@@ -1,0 +1,35 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbar {
+  background-color: #373c3f;
+  color: white;
+  font-size: 0.8em;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+#navbar li {
+  margin: 5vh 4vw;
+}
+#navbar li.responsive {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  #navbar li:not(.responsive) {
+    display: none;
+  }
+  #navbar li.responsive {
+    display: block;
+  }
+}
